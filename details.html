@@ -19,39 +19,36 @@
     <link rel="stylesheet" href="./dist/styles.min.css" />
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="left-header"><a href="/" class="logo">Marnon</a></div>
-      <div class="right-header">
-        <div class="login-info">
-          <a href="#">Whitelist</a>
-          <a href="#">My cart</a>
-          <a href="#">Login</a>
-        </div>
-        <div class="search">
-          <div class="search-box">
-            <input type="text" class="search-bar" />
-            <div class="icon"><i class="material-icons">search</i></div>
-          </div>
-          <span
-            class="btn-floating btn-small waves-effect waves-light cart-btn"
-          >
-            <i class="material-icons">shopping_cart</i>
-          </span>
+      <div class="top-header">
+        <div class="left-top-header"><a href="/" class="logo">Marnon</a></div>
+        <div class="right-top-header">
+          <a href="#" class="login-btn">Login</a>
         </div>
       </div>
     </header>
     <div class="categories">
-      <span><i class="material-icons">dashboard</i>Categories</span>
+      <span
+        ><i class="material-icons">favorite_border</i
+        ><i class="material-icons">shopping_cart</i></span
+      >
       <ul>
-        <li><a href="#" class="active">Mobile</a></li>
+        <li><a href="#" class="active">Mobile </a></li>
         <li><a href="#">Laptop</a></li>
         <li><a href="#">Watch</a></li>
         <li><a href="#">Headphone</a></li>
         <li><a href="#">Monitor</a></li>
         <li><a href="#">TV</a></li>
       </ul>
+      <div class="search hide-search">
+        <div class="search-box"><input type="text" /></div>
+      </div>
+      <i class="material-icons search-open-icon">search</i>
+      <i class="material-icons search-close-icon hide">close</i>
     </div>
     <div class="product-details">
       <div class="container">
