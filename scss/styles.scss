@@ -1,5 +1,5 @@
 //variables
-$bodyColor: #f8f8f5;
+$mutedWhite: #eee;
 $fontColor: #323232;
 $borderColor: #c7c7c7;
 $white: #ffffff;
@@ -65,7 +65,7 @@ header {
       display: flex;
       position: relative;
       align-items: center;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
       i {
         font-size: 1.2rem;
       }
@@ -88,10 +88,11 @@ header {
           }
         }
         .icon {
-          background: #eee;
+          background: $themeColor;
+          color: $white;
+          cursor: pointer;
           i {
-            border: 1px solid $borderColor;
-            padding: 0.4rem;
+            padding: 0.5rem;
             height: 100%;
           }
         }
@@ -106,9 +107,9 @@ header {
 .categories {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem 1rem;
   background: $white;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid $mutedWhite;
   span {
     display: flex;
     align-items: center;
@@ -159,7 +160,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid $mutedWhite;
     margin-bottom: 1rem;
   }
   img {
@@ -176,8 +177,63 @@ header {
 
 //footer
 footer {
+  margin-top: 2rem;
   padding: 1rem 2rem;
-  border-top: 2px solid #eee;
+  border-top: 2px solid $mutedWhite;
   display: flex;
   justify-content: space-between;
+}
+
+//product details
+.product-details {
+  margin-top: 2rem;
+  .product-image {
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 0.2rem;
+      object-fit: cover;
+    }
+  }
+  .product-sub-image {
+    margin-top: 1rem;
+    width: 100%;
+    height: 5rem;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 4px solid $white;
+      box-shadow: 0 0 0 1px #d7d7d7;
+      border-radius: 0.2rem;
+    }
+  }
+  .product-info {
+    h4 {
+      margin-top: 0;
+      color: $themeColor;
+    }
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .product-desc {
+      margin: 2rem 0;
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .product-btn {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 48%;
+        &:first-child {
+          background-color: $themeColor;
+        }
+      }
+    }
+  }
 }
