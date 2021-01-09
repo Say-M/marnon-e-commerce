@@ -298,10 +298,8 @@ footer {
     }
   }
   .product-info {
-    .input-field {
-      margin-top: 0;
-    }
     h4 {
+      margin-top: 0;
       color: $themeColor;
     }
     p {
@@ -328,6 +326,13 @@ footer {
           background-color: $themeColor;
         }
       }
+    }
+    .pallet {
+      border-radius: 50%;
+      height: 4rem;
+      width: 4rem;
+      margin: auto;
+      margin-top: 1rem;
     }
   }
 }
