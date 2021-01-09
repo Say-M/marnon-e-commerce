@@ -27,8 +27,8 @@
       <div class="top-header">
         <div class="left-top-header">
           <a href="/" class="logo"
-            ><img src="./dist/images/LEGAME.png" alt=""
-          /></a>
+            ><img src="./dist/images/LEGAME.png" alt="" />LEGAME</a
+          >
         </div>
         <div class="right-top-header">
           <i class="material-icons hide-on-large-only menu-btn">menu</i>
@@ -91,20 +91,49 @@
             </div>
             <div class="col m7">
               <div class="product-info">
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>
+                      Choose your option
+                    </option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+                <p>Color Pallet</p>
+                <div class="row">
+                  <div class="col s3">
+                    <div class="teal" style="width: 100%; height: 5rem"></div>
+                  </div>
+                  <div class="col s3">
+                    <div class="purple" style="width: 100%; height: 5rem"></div>
+                  </div>
+                  <div class="col s3">
+                    <div class="indigo" style="width: 100%; height: 5rem"></div>
+                  </div>
+                  <div class="col s3">
+                    <div class="orange" style="width: 100%; height: 5rem"></div>
+                  </div>
+                </div>
                 <h4>This is a product</h4>
                 <div style="display: flex; align-items: center">
-                  <span style="white-space: nowrap; margin-right: 1rem">
+                  <span
+                    style="white-space: nowrap; margin-right: 1rem; width: 50%"
+                  >
                     <p><strong>Category : </strong>Wallpaper</p>
                     <p><strong>Price : </strong>$250</p>
                   </span>
                   <div class="product-btn">
-                    <button class="waves-effect waves-light btn btn-large">
-                      <i class="material-icons left">shopping_cart</i>Add Cart
+                    <button class="waves-effect waves-light btn btn-small">
+                      <i class="material-icons left">shopping_cart</i>Add to
+                      Cart
                     </button>
                     <button
-                      class="waves-effect waves-light btn btn-large grey darken-4"
+                      class="waves-effect waves-light btn btn-small grey darken-4"
                     >
-                      <i class="material-icons left">favorite</i>Add Whitelist
+                      <i class="material-icons left">favorite</i>Add to
+                      Whitelist
                     </button>
                   </div>
                 </div>
@@ -135,10 +164,8 @@
       </div>
     </div>
     <footer>
-      <p>Marnon || &copy; 2021 All Rights Reserved</p>
-      <p>
-        Designed By <a href="https://facebook.com/sayem.me">Mohammad Sayem</a>
-      </p>
+      <p>Legame || &copy; 2021 All Rights Reserved</p>
+      <p>Developed by: <a href="https://bugfixers.net/">Bugfixers LTD.</a></p>
     </footer>
   </body>
 </html>

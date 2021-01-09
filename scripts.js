@@ -1,4 +1,4 @@
-
+//slider activation
 const options = {
   fullWidth: true,
   indicators: true,
@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel')
   var instances = M.Carousel.init(elems, options)
 })
+
+//select bar activation
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+})
+
+//dropdown activation
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems, options);
+});
 
 //search bar selector
 const search = document.querySelector('.search')
